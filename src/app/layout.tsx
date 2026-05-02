@@ -13,8 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pensamientos",
-  description: "Un blog personal de pensamientos y reflexiones",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  title: {
+    default: "Pensamientos | Blog Personal",
+    template: "%s | Pensamientos",
+  },
+  description: "Un espacio personal para documentar ideas, reflexiones, poesías y aprendizajes.",
+  keywords: ["pensamientos", "reflexiones", "poesía", "poemas", "escribir", "blog personal"],
+  openGraph: {
+    title: "Pensamientos | Blog Personal",
+    description: "Un espacio personal para documentar ideas, reflexiones, poesías y aprendizajes.",
+    url: "/",
+    siteName: "Pensamientos",
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pensamientos | Blog Personal",
+    description: "Un espacio personal para documentar ideas, reflexiones, poesías y aprendizajes.",
+  },
 };
 
 export default function RootLayout({

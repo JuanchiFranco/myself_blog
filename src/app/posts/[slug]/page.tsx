@@ -2,13 +2,53 @@ import { getPostData } from '@/lib/posts';
 import { format, parseISO } from 'date-fns';
 import { es } from 'date-fns/locale';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const postData = await getPostData(slug);
+
+  return {
+    title: postData.title,
+    description: postData.description || `Reflexión: ${postData.title}`,
+    openGraph: {
+      title: postData.title,
+      description: postData.description || `Reflexión: ${postData.title}`,
+      type: 'article',
+      publishedTime: postData.date,
+      authors: postData.author ? [postData.author] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: postData.title,
+      description: postData.description || `Reflexión: ${postData.title}`,
+    },
+  };
+}
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const postData = await getPostData(slug);
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: postData.title,
+    datePublished: postData.date,
+    dateModified: postData.date,
+    description: postData.description || `Reflexión: ${postData.title}`,
+    author: {
+      '@type': 'Person',
+      name: postData.author || 'Anónimo',
+    },
+  };
+
   return (
     <div className="min-h-screen font-sans selection:bg-blue-500/30">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <main className="max-w-3xl mx-auto px-6 py-20">
         <nav className="mb-12">
           <Link 
