@@ -21,13 +21,22 @@ export default function Home() {
               priority
             />
           </div>
-          <div>
+          <div className="flex-1">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3 text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500">
-              Mis Pensamientos
+              Ecos de Tinta
             </h1>
-            <p className="text-lg text-zinc-400 max-w-xl">
-              Un espacio personal para documentar ideas, reflexiones y aprendizajes. Explorando conceptos, un post a la vez.
+            <p className="text-lg text-zinc-400 max-w-xl mb-6">
+              Un espacio colectivo para documentar ideas, reflexiones y aprendizajes. Únete y comparte tu voz.
             </p>
+            <Link 
+              href="/escribir" 
+              className="inline-flex items-center px-6 py-3 text-sm font-semibold text-zinc-100 bg-blue-600 hover:bg-blue-500 rounded-full transition-colors duration-300 shadow-lg shadow-blue-500/20"
+            >
+              Escribe tu pensamiento
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+              </svg>
+            </Link>
           </div>
         </header>
 

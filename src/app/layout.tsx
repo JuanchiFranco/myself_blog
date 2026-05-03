@@ -15,23 +15,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://myself-blog-three.vercel.app'),
   title: {
-    default: "Pensamientos | Blog Personal",
-    template: "%s | Pensamientos",
+    default: "Ecos de Tinta | Blog Colaborativo",
+    template: "%s | Ecos de Tinta",
   },
-  description: "Un espacio personal para documentar ideas, reflexiones, poesías y aprendizajes.",
-  keywords: ["pensamientos", "reflexiones", "poesía", "poemas", "escribir", "blog personal"],
+  description: "Un espacio colectivo para documentar ideas, reflexiones, poesías y aprendizajes.",
+  keywords: ["pensamientos", "reflexiones", "poesía", "poemas", "escribir", "blog colaborativo"],
   openGraph: {
-    title: "Pensamientos | Blog Personal",
-    description: "Un espacio personal para documentar ideas, reflexiones, poesías y aprendizajes.",
+    title: "Ecos de Tinta | Blog Colaborativo",
+    description: "Un espacio colectivo para documentar ideas, reflexiones, poesías y aprendizajes.",
     url: "/",
-    siteName: "Pensamientos",
+    siteName: "Ecos de Tinta",
     locale: "es_ES",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pensamientos | Blog Personal",
-    description: "Un espacio personal para documentar ideas, reflexiones, poesías y aprendizajes.",
+    title: "Ecos de Tinta | Blog Colaborativo",
+    description: "Un espacio colectivo para documentar ideas, reflexiones, poesías y aprendizajes.",
   },
 };
 

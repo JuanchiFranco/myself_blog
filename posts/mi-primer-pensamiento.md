@@ -1,31 +1,27 @@
 ---
-title: "Mi primer pensamiento"
+title: "Bienvenidos a Ecos de Tinta"
 date: "2026-05-02"
-description: "Por qué decidí empezar a escribir en un mundo que no para."
-author: "anónimo"
+description: "Un espacio colaborativo para detenernos a pensar y compartir nuestras voces."
+author: "Fundador"
 ---
 
-Abrir este blog no fue una gran decisión épica.
-Fue más bien una incomodidad que se venía acumulando.
+Vivimos consumiendo contenido todo el tiempo: scroll infinito, videos rápidos, opiniones prestadas, ruido constante. Casi nunca nos detenemos a pensar qué opinamos *nosotros*.
 
-Vivimos consumiendo contenido todo el tiempo: scroll, videos, opiniones, ruido.
-Pero casi nunca nos detenemos a pensar qué opinamos nosotros.
+Y de esa inquietud nació **Ecos de Tinta**.
 
-Y eso me empezó a molestar.
+No quería que esto fuera un simple diario personal. Quería construir un refugio donde la prisa no tuviera lugar. Un espacio colectivo donde no tengamos que resumir nuestras ideas en 15 segundos ni buscar desesperadamente una frase "viral".
 
-## ¿Por qué un blog?
+## Tu voz también importa
 
-Porque quiero un espacio donde no tenga que correr.
-Donde no tenga que resumir todo en 15 segundos ni en una frase “bonita”.
+Este blog ahora es de todos. He abierto las puertas para que cualquier persona con una reflexión, un poema, o una idea a medio cocinar pueda publicarla aquí. 
 
-Un lugar para pensar con calma.
-Para equivocarme.
-Para escribir ideas que no están completamente formadas.
+Es un lugar para:
+- Pensar con calma.
+- Equivocarnos y aprender.
+- Compartir ideas auténticas sin miedo al "qué dirán".
 
-No sé exactamente en qué se va a convertir este blog.
-Pero sé lo que no quiero que sea: otro lugar más lleno de ruido.
+Si tienes algo en la mente que merece ser leído, te invito a hacer clic en el botón de **Escribe tu pensamiento** en la portada. Envíame lo que has escrito y lo publicaremos para que tu voz también resuene en este rincón.
 
-Si llegaste hasta aquí, gracias por leer.
-Y si no estás de acuerdo con algo en el futuro, mejor todavía.
+Gracias por estar aquí. Si llegaste hasta este punto, el primer paso ya está dado.
 
 Nos leemos.
