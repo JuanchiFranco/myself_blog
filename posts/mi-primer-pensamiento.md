@@ -3,6 +3,7 @@ title: "Bienvenidos a Ecos de Tinta"
 date: "2026-05-02"
 description: "Un espacio colaborativo para detenernos a pensar y compartir nuestras voces."
 author: "Fundador"
+category: "Reflexiones"
 ---
 
 Vivimos consumiendo contenido todo el tiempo: scroll infinito, videos rápidos, opiniones prestadas, ruido constante. Casi nunca nos detenemos a pensar qué opinamos *nosotros*.

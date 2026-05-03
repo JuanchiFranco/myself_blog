@@ -42,12 +42,19 @@ export default function Home() {
 
         <section>
           <div className="space-y-6">
-            {allPostsData.map(({ slug, date, title, description }) => (
+            {allPostsData.map(({ slug, date, title, description, category }) => (
               <Link href={`/posts/${slug}`} key={slug} className="block group outline-none">
                 <article className="glass-card rounded-2xl p-6 transition-all duration-300 transform group-hover:-translate-y-1 group-focus-visible:-translate-y-1">
-                  <time dateTime={date} className="text-xs font-semibold text-blue-400 mb-2 tracking-wider uppercase block">
-                    {format(parseISO(date), "d 'de' MMMM, yyyy", { locale: es })}
-                  </time>
+                  <div className="flex items-center space-x-3 mb-3">
+                    {category && (
+                      <span className="px-2.5 py-0.5 text-[10px] font-bold text-blue-400 bg-blue-500/10 border border-blue-500/20 rounded-full tracking-wider uppercase">
+                        {category}
+                      </span>
+                    )}
+                    <time dateTime={date} className="text-xs font-semibold text-zinc-500 tracking-wider uppercase block">
+                      {format(parseISO(date), "d 'de' MMMM, yyyy", { locale: es })}
+                    </time>
+                  </div>
                   <h2 className="text-2xl font-bold text-zinc-100 group-hover:text-blue-400 transition-colors mb-2">
                     {title}
                   </h2>

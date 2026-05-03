@@ -12,6 +12,7 @@ export interface PostData {
   date: string;
   description?: string;
   author?: string;
+  category?: string;
   contentHtml?: string;
 }
 
@@ -32,7 +33,7 @@ export function getSortedPostsData(): PostData[] {
     // Combine the data with the id
     return {
       slug,
-      ...(matterResult.data as { title: string; date: string; description?: string; author?: string }),
+      ...(matterResult.data as { title: string; date: string; description?: string; author?: string; category?: string }),
     };
   });
 
@@ -63,6 +64,6 @@ export async function getPostData(slug: string): Promise<PostData> {
   return {
     slug,
     contentHtml,
-    ...(matterResult.data as { title: string; date: string; description?: string; author?: string }),
+    ...(matterResult.data as { title: string; date: string; description?: string; author?: string; category?: string }),
   };
 }

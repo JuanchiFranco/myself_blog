@@ -64,14 +64,22 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
         <article className="glass-card rounded-3xl p-8 md:p-12">
           <header className="mb-12 border-b border-zinc-800/50 pb-8">
-            <div className="flex items-center text-sm font-semibold text-blue-400 mb-4 tracking-wider uppercase">
-              <time dateTime={postData.date}>
+            <div className="flex flex-wrap items-center text-sm font-semibold text-blue-400 mb-4 tracking-wider uppercase gap-y-2">
+              {postData.category && (
+                <>
+                  <span className="px-3 py-1 text-xs font-bold text-blue-400 bg-blue-500/10 border border-blue-500/20 rounded-full">
+                    {postData.category}
+                  </span>
+                  <span className="mx-3 text-zinc-600 hidden sm:inline">•</span>
+                </>
+              )}
+              <time dateTime={postData.date} className="text-zinc-400 sm:text-blue-400 mt-2 sm:mt-0">
                 {format(parseISO(postData.date), "d 'de' MMMM, yyyy", { locale: es })}
               </time>
               {postData.author && (
                 <>
-                  <span className="mx-2 text-zinc-600">•</span>
-                  <span>Por {postData.author}</span>
+                  <span className="mx-3 text-zinc-600 hidden sm:inline">•</span>
+                  <span className="text-zinc-400 sm:text-blue-400 mt-2 sm:mt-0 ml-4 sm:ml-0">Por {postData.author}</span>
                 </>
               )}
             </div>
