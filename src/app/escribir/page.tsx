@@ -63,6 +63,19 @@ export default function EscribirPage() {
               </div>
             </div>
 
+            <div className="flex items-start space-x-3 p-4 bg-zinc-900/30 rounded-xl border border-zinc-800/50">
+              <input
+                type="checkbox"
+                name="autorizar_nombre"
+                id="autorizar_nombre"
+                value="Sí, publicar con mi nombre"
+                className="mt-1 w-4 h-4 rounded border-zinc-700 bg-zinc-900 text-blue-600 focus:ring-blue-500 focus:ring-offset-zinc-900 cursor-pointer accent-blue-600"
+              />
+              <label htmlFor="autorizar_nombre" className="text-sm font-medium text-zinc-300 cursor-pointer">
+                Quiero que mi nombre (o seudónimo) aparezca públicamente como el autor de este pensamiento. <span className="text-zinc-500 font-normal block mt-1">Si no lo marcas, el post se publicará como "Anónimo".</span>
+              </label>
+            </div>
+
             <div className="space-y-2">
               <label htmlFor="title" className="text-sm font-semibold text-zinc-300">
                 Título del pensamiento
